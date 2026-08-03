@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TimeStructor — Privacy Policy</title>
+    <meta name="description" content="Privacy policy for the TimeStructor Android app: what data stays on your device, what leaves it, and your rights under the GDPR.">
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #ffffff;
+            --fg: #1b1b1f;
+            --muted: #5c5f6b;
+            --accent: #6750a4;
+            --rule: #e2e2e8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #131316;
+                --fg: #e5e5ea;
+                --muted: #a1a3ae;
+                --accent: #cfbcff;
+                --rule: #2d2d33;
+            }
+        }
+        * { box-sizing: border-box; }
+        html { -webkit-text-size-adjust: 100%; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--fg);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 1.0625rem;
+            line-height: 1.65;
+        }
+        main {
+            max-width: 44rem;
+            margin: 0 auto;
+            padding: 3rem 1.25rem 5rem;
+        }
+        h1 {
+            font-size: clamp(1.7rem, 5vw, 2.15rem);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin: 0 0 0.5rem;
+        }
+        .updated {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin: 0 0 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--rule);
+        }
+        h2 {
+            font-size: 1.2rem;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+            margin: 2.75rem 0 0.75rem;
+            scroll-margin-top: 1.5rem;
+        }
+        p { margin: 0 0 1rem; }
+        ul { margin: 0 0 1rem; padding-left: 1.3rem; }
+        li { margin: 0.45rem 0; }
+        strong { font-weight: 600; }
+        a {
+            color: var(--accent);
+            text-underline-offset: 0.15em;
+            overflow-wrap: anywhere;
+        }
+        address {
+            font-style: normal;
+            margin: 0 0 1rem;
+        }
+        @media print {
+            :root { --bg: #fff; --fg: #000; --muted: #444; --accent: #000; --rule: #bbb; }
+            main { max-width: none; padding: 0; }
+            h2 { margin-top: 1.6rem; page-break-after: avoid; }
+            a { text-decoration: none; }
+        }
+    </style>
+</head>
+<body>
+<main>
+
+    <h1>TimeStructor — Privacy Policy</h1>
+    <p class="updated"><strong>Last updated: 3 August 2026</strong></p>
+
+    <h2 id="short-version">1. The short version</h2>
+    <p>TimeStructor is built to keep your data on your device.</p>
+    <ul>
+        <li>Everything you track — Activities, Groups, intervals, templates, settings — is stored <strong>locally on your device</strong>. We do not run a server for it and we cannot see it.</li>
+        <li>There are <strong>no accounts, no advertising, no analytics, and no third-party trackers</strong> in the App.</li>
+        <li><strong>Cloud sync is optional and off by default.</strong> When you turn it on, your data goes to <strong>your own</strong> cloud storage account, not to us.</li>
+        <li>We receive personal data from you in only two situations: when you buy a subscription (handled by Google Play and our subscription provider), and when you choose to send us a bug report.</li>
+    </ul>
+    <p>The rest of this policy sets that out in detail, as required by the General Data Protection Regulation (GDPR).</p>
+
+    <h2 id="controller">2. Who is responsible</h2>
+    <p>The controller of personal data described in this policy is:</p>
+    <address>
+        <strong>Anastasiia Simonova</strong><br>
+        Slovak Republic<br>
+        <strong>[ADDRESS]</strong><br>
+        E-mail: <strong><a href="mailto:apps.simonova@gmail.com">apps.simonova@gmail.com</a></strong>
+    </address>
+    <p>For any question about this policy or about your rights, write to the e-mail address above.</p>
+
+    <h2 id="on-device">3. Data stored on your device</h2>
+    <p>The App stores on your device: your Activities and Groups, their names, colours, icons, targets and limits, your tracked intervals, export templates, notification settings, and app preferences such as language and time format. It also keeps a locally generated device identifier, used to tell your devices apart when cloud sync is enabled.</p>
+    <p>This data is not transmitted to us. It lives in the App's private storage on your device.</p>
+    <p><strong>System backups.</strong> The App allows Android's own backup mechanism to include this data: Android Auto Backup copies it to your Google account, if you have backup switched on. That copy is made by the operating system, goes to <strong>your</strong> account, and is governed by Google's privacy policy — we neither perform it nor have access to it. You can turn it off in your device's system settings.</p>
+    <p>Deleting the App deletes the data on the device. We cannot restore it.</p>
+
+    <h2 id="cloud-sync">4. Cloud sync (optional)</h2>
+    <p>Cloud sync is disabled until you connect a storage provider yourself. The provider currently supported is <strong>Dropbox</strong>.</p>
+    <p>When you connect it:</p>
+    <ul>
+        <li>You sign in <strong>in Dropbox's own login screen</strong>, opened in a system browser tab. We never see or receive your Dropbox password.</li>
+        <li>The App stores the resulting access and refresh tokens <strong>on your device</strong>, in the operating system's secure storage (Android Keystore-backed storage).</li>
+        <li>Your tracking data is written as files into <strong>your own Dropbox account</strong>, in the app-specific folder Dropbox creates for TimeStructor. It is not sent to us, and we have no access to that folder.</li>
+        <li>The App reads the <strong>e-mail address of your Dropbox account</strong> in order to display it on the Cloud sync screen, so you can see which account is connected. It is fetched live, shown partly masked, and is <strong>neither stored nor written to logs</strong>.</li>
+    </ul>
+    <p>Dropbox processes this data as an independent controller under its own privacy policy (<a href="https://www.dropbox.com/privacy">https://www.dropbox.com/privacy</a>). You can disconnect at any time on the Cloud sync screen, which removes the stored tokens from your device, and you can revoke the App's access from your Dropbox account settings. Disconnecting does not delete files already in your Dropbox — delete those in Dropbox itself.</p>
+
+    <h2 id="subscriptions">5. Subscriptions and purchases</h2>
+    <p>Premium subscriptions are sold by <strong>Google</strong> through Google Play. Google acts as the seller: it processes your payment, and we never receive your payment card details.</p>
+    <p>To determine whether your subscription is active, the App uses <strong>Adapty</strong>, a subscription management service (<a href="https://adapty.io">https://adapty.io</a>). Adapty processes:</p>
+    <ul>
+        <li>a subscription profile identifier generated for your installation — we do <strong>not</strong> pass Adapty any name, e-mail address, or account identifier of yours, so the profile is not linked by us to your identity;</li>
+        <li>technical data about your device and app installation, such as device model, operating system version, app version, and store country;</li>
+        <li>purchase and transaction data received from Google, such as which product was bought, when it renews or expires, and whether it was refunded.</li>
+    </ul>
+    <p>Adapty acts as our processor under a data processing agreement, and its own privacy policy describes its processing in detail. Google additionally provides us with sales and subscription reports in aggregate form, which do not identify individual users.</p>
+
+    <h2 id="diagnostics">6. Diagnostic log and bug reports</h2>
+    <p>The App keeps a <strong>local diagnostic log</strong> on your device, with a size limit and rotation. It records technical events — errors, sync steps, and similar — and is designed not to record the content of your entries. Values that could carry secrets (authorisation tokens, OAuth parameters, e-mail addresses) are masked automatically before a line is written.</p>
+    <p>The log stays on your device and is <strong>never uploaded automatically</strong>.</p>
+    <p>It leaves your device only if you use <strong>Settings → Report a bug</strong>. That opens <strong>your own e-mail app</strong> with the log attached, so you can read the attachment before sending, edit your message, or cancel. Nothing is sent until you press send in your e-mail app.</p>
+    <p>If you do send it, we receive your e-mail address, whatever you write, and the attached log, at <a href="mailto:apps.simonova@gmail.com">apps.simonova@gmail.com</a> (a Gmail mailbox, processed by Google as our provider). We use it only to investigate the problem you reported, and we delete bug report correspondence once the issue is resolved and no longer needed, and in any case within <strong>24 months</strong>.</p>
+
+    <h2 id="notifications">7. Notifications</h2>
+    <p>Notifications about paused Activities, goals, and limits are <strong>generated locally on your device</strong>. They are not routed through a server, and no push service receives your data. On Android 13 and later the App asks for notification permission; you can withdraw it at any time in system settings.</p>
+
+    <h2 id="what-we-do-not-do">8. What the App does not do</h2>
+    <ul>
+        <li>It contains no advertising and no advertising identifiers.</li>
+        <li>It contains no analytics or usage-tracking SDK, and no crash-reporting service.</li>
+        <li>It does not build profiles of you and does not take automated decisions producing legal effects.</li>
+        <li>It does not sell or share personal data, and it does not disclose it to anyone except the providers named in this policy.</li>
+        <li>It does not require an account with us — we do not operate one.</li>
+    </ul>
+
+    <h2 id="legal-bases">9. Legal bases for processing</h2>
+    <ul>
+        <li><strong>Performance of a contract</strong> (Art. 6(1)(b) GDPR): providing the App and the Premium features you bought, verifying your subscription, and running cloud sync when you have connected it.</li>
+        <li><strong>Legitimate interests</strong> (Art. 6(1)(f) GDPR): investigating a bug you reported to us, and keeping the App secure and functioning correctly. Our interest is in supporting and maintaining the App, weighed against the very limited data involved and the fact that you decide whether to send it.</li>
+        <li><strong>Legal obligations</strong> (Art. 6(1)(c) GDPR): retaining records where accounting or tax law requires it.</li>
+    </ul>
+    <p>Where processing rests on your consent, you may withdraw it at any time — this does not affect the lawfulness of processing carried out before withdrawal.</p>
+
+    <h2 id="retention">10. How long data is kept</h2>
+    <ul>
+        <li>Data on your device: until you delete it in the App, or until you uninstall the App.</li>
+        <li>The diagnostic log: until it is rotated out by newer entries, or until you clear it.</li>
+        <li>Files in your cloud storage: until you delete them in your storage provider's account.</li>
+        <li>Data held by Adapty: for the duration of your subscription relationship and the retention period set out in Adapty's own policy.</li>
+        <li>Bug report correspondence: as described in clause 6.</li>
+    </ul>
+
+    <h2 id="transfers">11. International transfers</h2>
+    <p>Our providers (Google, Adapty, and Dropbox where you have connected it) may process data outside the European Economic Area, including in the United States. Where that happens, the transfer is covered by an adequacy decision of the European Commission, or by the European Commission's Standard Contractual Clauses, or by another safeguard permitted under Chapter V of the GDPR.</p>
+
+    <h2 id="your-rights">12. Your rights</h2>
+    <p>Under the GDPR you have the right to request <strong>access</strong> to your personal data, its <strong>rectification</strong> or <strong>erasure</strong>, the <strong>restriction</strong> of processing, <strong>portability</strong> of data you provided, and to <strong>object</strong> to processing based on legitimate interests.</p>
+    <p>Note that these rights apply to data we actually hold. <strong>Data that stays on your device is under your own control</strong>, so you exercise those rights directly in the App: view, edit, export (JSON, CSV), and delete your entries, and uninstall the App to remove everything.</p>
+    <p>To exercise your rights against us, write to <strong><a href="mailto:apps.simonova@gmail.com">apps.simonova@gmail.com</a></strong>. We reply within one month.</p>
+    <p>If you believe your data is processed unlawfully, you may lodge a complaint with the Slovak supervisory authority, the <strong>Office for Personal Data Protection of the Slovak Republic</strong> (Úrad na ochranu osobných údajov Slovenskej republiky, <a href="https://dataprotection.gov.sk">dataprotection.gov.sk</a>), or with the supervisory authority of your country of residence.</p>
+
+    <h2 id="children">13. Children</h2>
+    <p>The App is not directed at children and is intended for users aged 16 and over. We do not knowingly process the personal data of children.</p>
+
+    <h2 id="changes">14. Changes to this policy</h2>
+    <p>We may update this policy — for example when the App gains a feature that handles data differently. The current version is always available in the App and at the address where you are reading it, with the date of the last update at the top. If a change is material, we will bring it to your attention in the App.</p>
+
+    <h2 id="contact">15. Contact</h2>
+    <p><strong>Anastasiia Simonova</strong> — <strong><a href="mailto:apps.simonova@gmail.com">apps.simonova@gmail.com</a></strong></p>
+
+</main>
+</body>
+</html>
