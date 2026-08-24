@@ -11,14 +11,14 @@
 <main>
 
     <h1>TimeStructor — Privacy Policy</h1>
-    <p class="updated"><strong>Last updated: 5 August 2026</strong></p>
+    <p class="updated"><strong>Last updated: 24 August 2026</strong></p>
 
     <h2 id="short-version">1. The short version</h2>
     <p>TimeStructor is built to keep your data on your device.</p>
     <ul>
         <li>Everything you track — Activities, Groups, intervals, templates, settings — is stored <strong>locally on your device</strong>. We do not run a server for it and we cannot see it.</li>
         <li>There are <strong>no accounts, no advertising, no analytics, and no third-party trackers</strong> in the App.</li>
-        <li><strong>Cloud sync is optional and off by default.</strong> When you turn it on, your data goes to <strong>your own</strong> cloud storage account, not to us.</li>
+        <li><strong>Cloud sync is optional and off by default.</strong> When you turn it on, your data goes to <strong>your own</strong> cloud storage account — Dropbox or Google Drive, whichever you connect — not to us.</li>
         <li>We receive personal data from you in only two situations: when you buy a subscription (handled by Google Play and our subscription provider), and when you choose to send us a bug report.</li>
     </ul>
     <p>The rest of this policy sets that out in detail, as required by the General Data Protection Regulation (GDPR).</p>
@@ -35,15 +35,17 @@
     <p>Deleting the App deletes the data on the device. We cannot restore it.</p>
 
     <h2 id="cloud-sync">4. Cloud sync (optional)</h2>
-    <p>Cloud sync is disabled until you connect a storage provider yourself. The provider currently supported is <strong>Dropbox</strong>.</p>
-    <p>When you connect it:</p>
+    <p>Cloud sync is disabled until you connect a storage provider yourself. The providers currently supported are <strong>Dropbox</strong> and <strong>Google Drive</strong>. Only one of them is active at a time: connecting one moves sync to it.</p>
+    <p>When you connect a provider:</p>
     <ul>
-        <li>You sign in <strong>in Dropbox's own login screen</strong>, opened in a system browser tab. We never see or receive your Dropbox password.</li>
-        <li>The App stores the resulting access and refresh tokens <strong>on your device</strong>, in the operating system's secure storage (Android Keystore-backed storage).</li>
-        <li>Your tracking data is written as files into <strong>your own Dropbox account</strong>, in the app-specific folder Dropbox creates for TimeStructor. It is not sent to us, and we have no access to that folder.</li>
-        <li>The App reads the <strong>e-mail address of your Dropbox account</strong> in order to display it on the Cloud sync screen, so you can see which account is connected. It is fetched live, shown partly masked, and is <strong>neither stored nor written to logs</strong>.</li>
+        <li>You sign in <strong>with the provider itself</strong>: Dropbox opens its own login page in a system browser tab, and Google Drive uses the account chooser provided by Google Play services. We never see or receive your password.</li>
+        <li>The App stores what it needs to stay connected <strong>on your device</strong>, in the operating system's secure storage (Android Keystore-backed storage). For Dropbox these are the access and refresh tokens. For Google Drive there is no refresh token: Google Play services issues short-lived access tokens, and the App keeps only a marker that you granted access.</li>
+        <li>Your tracking data is written as files into <strong>your own account</strong> with that provider — the app-specific folder Dropbox creates for TimeStructor, or the hidden application data folder that Google Drive keeps for the App. It is not sent to us, and we have no access to it.</li>
+        <li>On Google Drive the App requests <strong>one permission only</strong> (<code>drive.appdata</code>). It grants access to that hidden application folder and to nothing else in your Drive: the App cannot see, read, or change your other files.</li>
+        <li>The App reads the <strong>e-mail address of the connected account</strong> in order to display it on the Cloud sync screen, so you can see which account is in use. It is fetched live, shown partly masked, and is <strong>neither stored nor written to logs</strong>.</li>
     </ul>
-    <p>Dropbox handles the data in your account on its own responsibility rather than ours, under its own privacy policy (<a href="https://www.dropbox.com/privacy">https://www.dropbox.com/privacy</a>). You can disconnect at any time on the Cloud sync screen, which removes the stored tokens from your device, and you can revoke the App's access from your Dropbox account settings. Disconnecting does not delete files already in your Dropbox — delete those in Dropbox itself.</p>
+    <p>Each provider handles the data in your account on its own responsibility rather than ours, under its own privacy policy (Dropbox: <a href="https://www.dropbox.com/privacy">https://www.dropbox.com/privacy</a>, Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>). You can disconnect at any time on the Cloud sync screen, which removes the stored tokens or the access marker from your device. You can also revoke the App's access in your Dropbox account settings, or, for Google, in your Google Account under the apps connected to it (<a href="https://myaccount.google.com/connections">https://myaccount.google.com/connections</a>).</p>
+    <p>Disconnecting does not delete files that were already uploaded. Delete them in Dropbox itself. For Google Drive, note that the application data folder is <strong>hidden from the Drive interface</strong> by Google's design — you will not find those files in My Drive or in search; Google lets you erase an app's hidden data from Google Drive settings on the web, in the section listing the apps connected to your Drive.</p>
 
     <h2 id="subscriptions">5. Subscriptions and purchases</h2>
     <p>Premium subscriptions are sold by <strong>Google</strong> through Google Play. Google acts as the seller: it processes your payment, and we never receive your payment card details.</p>
@@ -85,13 +87,13 @@
     <ul>
         <li>Data on your device: until you delete it in the App, or until you uninstall the App.</li>
         <li>The diagnostic log: until it is rotated out by newer entries, or until you clear it.</li>
-        <li>Files in your cloud storage: until you delete them in your storage provider's account.</li>
+        <li>Files in your cloud storage: until you delete them in your storage provider's account (see clause 4 for Google Drive, where the App's folder is hidden from the Drive interface).</li>
         <li>Data held by Adapty: for the duration of your subscription relationship and the retention period set out in Adapty's own policy.</li>
         <li>Bug report correspondence: as described in clause 6.</li>
     </ul>
 
     <h2 id="transfers">11. International transfers</h2>
-    <p>Our providers (Google, Adapty, and Dropbox where you have connected it) may process data outside the European Economic Area, including in the United States. Where that happens, the transfer is covered by an adequacy decision of the European Commission, or by the European Commission's Standard Contractual Clauses, or by another safeguard permitted under Chapter V of the GDPR.</p>
+    <p>Our providers (Google, Adapty, and the cloud storage provider you have connected — Dropbox or Google Drive) may process data outside the European Economic Area, including in the United States. Where that happens, the transfer is covered by an adequacy decision of the European Commission, or by the European Commission's Standard Contractual Clauses, or by another safeguard permitted under Chapter V of the GDPR.</p>
 
     <h2 id="your-rights">12. Your rights</h2>
     <p>Under the GDPR you have the right to request <strong>access</strong> to your personal data, its <strong>rectification</strong> or <strong>erasure</strong>, the <strong>restriction</strong> of processing, <strong>portability</strong> of data you provided, and to <strong>object</strong> to processing based on legitimate interests.</p>
