@@ -11,15 +11,15 @@
 <main>
 
     <h1>TimeStructor — Privacy Policy</h1>
-    <p class="updated"><strong>Last updated: 27 August 2026</strong></p>
+    <p class="updated"><strong>Last updated: 16 September 2026</strong></p>
 
     <h2 id="short-version">1. The short version</h2>
     <p>TimeStructor is built to keep your data on your device.</p>
     <ul>
         <li>Everything you track — Activities, Groups, intervals, templates, settings — is stored <strong>locally on your device</strong>. We do not run a server for it and we cannot see it.</li>
-        <li>There are <strong>no accounts, no advertising, no analytics, and no third-party trackers</strong> in the App.</li>
+        <li>There are <strong>no accounts, no advertising, no analytics SDKs, and no third-party trackers</strong> in the App.</li>
         <li><strong>Cloud sync is optional and off by default.</strong> When you turn it on, your data goes to <strong>your own</strong> cloud storage account — Dropbox or Google Drive, whichever you connect — not to us.</li>
-        <li>We receive personal data from you in only two situations: when you buy a subscription (handled by Google Play and our subscription provider), and when you choose to send us a bug report.</li>
+        <li>Personal data about you reaches us in only two ways: through the subscription services — Google Play and our subscription provider, which the App uses whether or not you subscribe (clause 5) — and when you choose to send us a bug report (clause 6).</li>
     </ul>
     <p>The rest of this policy sets that out in detail, as required by the General Data Protection Regulation (GDPR).</p>
 
@@ -53,19 +53,21 @@
 
     <h2 id="subscriptions">5. Subscriptions and purchases</h2>
     <p>Premium subscriptions are sold by <strong>Google</strong> through Google Play. Google acts as the seller: it processes your payment, and we never receive your payment card details.</p>
-    <p>To determine whether your subscription is active, the App uses <strong>Adapty</strong>, a subscription management service (<a href="https://adapty.io">https://adapty.io</a>). Adapty processes:</p>
+    <p>To show you the subscription options and to determine whether your subscription is active, the App uses <strong>Adapty</strong>, a subscription management service (<a href="https://adapty.io">https://adapty.io</a>). It does so whether or not you subscribe. Adapty processes:</p>
     <ul>
-        <li>a subscription profile identifier generated for your installation — we do <strong>not</strong> pass Adapty any name, e-mail address, or account identifier of yours, so the profile is not linked by us to your identity;</li>
-        <li>technical data about your device and app installation, such as device model, operating system version, app version, and your IP address, from which your store country is determined;</li>
+        <li>identifiers: a subscription profile identifier generated for your installation, and two identifiers your device provides to apps — the Android ID and the app set ID, neither of which is shared with apps from other developers. We do <strong>not</strong> pass Adapty any name, e-mail address, or account identifier of yours, so the profile is not linked by us to your identity;</li>
+        <li>technical data about your device and app installation, such as device model, operating system version, app version, language and time zone settings, the country of your Google Play account, and your IP address, together with diagnostic records of the requests that Adapty's software in the App makes and whether they succeeded;</li>
+        <li>events recording when the subscription screen was shown to you and which version of it, used to measure how the subscription offer performs;</li>
         <li>purchase and transaction data received from Google, such as which product was bought, when it renews or expires, and whether it was refunded.</li>
     </ul>
-    <p>Adapty handles this data only on our behalf and on our instructions, under a data processing agreement, and its own privacy policy describes what it does in detail. Google additionally provides us with sales and subscription reports in aggregate form, which do not identify individual users.</p>
+    <p>Adapty handles this data only on our behalf and on our instructions, under a data processing agreement, and its own privacy policy describes what it does in detail.</p>
+    <p>Google also gives us sales reports with one line per order: the order number, the product and its price, the city, region, postcode and country of the buyer, and the device model. The reports do not contain your name or e-mail address. Google also lets us find an order by its number or by the full e-mail address of the Google account used to pay — for example, when you contact us about a purchase.</p>
 
     <h2 id="diagnostics">6. Diagnostic log and bug reports</h2>
     <p>The App keeps a <strong>local diagnostic log</strong> on your device, with a size limit and rotation. It records technical events — errors, sync steps, and similar — and is designed not to record the content of your entries. Values that could carry secrets (authorisation tokens, OAuth parameters, e-mail addresses) are masked automatically before a line is written.</p>
     <p>The log stays on your device and is <strong>never uploaded automatically</strong>.</p>
-    <p>It leaves your device only if you use <strong>Settings → Report a bug</strong>. That opens <strong>your own e-mail app</strong> with the log attached, so you can read the attachment before sending, edit your message, or cancel. Nothing is sent until you press send in your e-mail app.</p>
-    <p>If you do send it, we receive your e-mail address, whatever you write, and the attached log, at <a href="mailto:apps.simonova@gmail.com">apps.simonova@gmail.com</a> (a Gmail mailbox, processed by Google as our provider). We use it only to investigate the problem you reported, and we delete bug report correspondence once the issue is resolved and no longer needed, and in any case within <strong>24 months</strong>.</p>
+    <p>It leaves your device only if you use <strong>Settings → Support → Report a problem</strong>. That opens <strong>your own e-mail app</strong> with the log attached and a short diagnostics block already in the message: the app version, the platform, the model of your device, the App's device identifier (clause 3), the time of the report with your time zone, and the time of the last crash recorded in the log. You can read all of it before sending, edit your message, or cancel. Nothing is sent until you press send in your e-mail app.</p>
+    <p>If you do send it, we receive your e-mail address, whatever you write, the diagnostics block, and the attached log, at <a href="mailto:apps.simonova@gmail.com">apps.simonova@gmail.com</a> (a Gmail mailbox, processed by Google as our provider). We use it only to investigate the problem you reported, and we delete bug report correspondence once the issue is resolved and no longer needed, and in any case within <strong>24 months</strong>.</p>
 
     <h2 id="notifications">7. Notifications</h2>
     <p>Notifications about paused Activities, goals, and limits are <strong>generated locally on your device</strong>. They are not routed through a server, and no push service receives your data. On Android 13 and later the App asks for notification permission; you can withdraw it at any time in system settings.</p>
@@ -73,7 +75,7 @@
     <h2 id="what-we-do-not-do">8. What the App does not do</h2>
     <ul>
         <li>It contains no advertising and no advertising identifiers.</li>
-        <li>It contains no analytics or usage-tracking SDK, and no crash-reporting service.</li>
+        <li>It contains no analytics or usage-tracking SDK, and no crash-reporting service. The only events the App reports automatically are the ones our subscription provider receives, as described in clause 5.</li>
         <li>It does not build profiles of you and does not take automated decisions producing legal effects.</li>
         <li>It does not sell or share personal data, and it does not disclose it to anyone except the providers named in this policy.</li>
         <li>It does not require an account with us — we do not operate one.</li>
@@ -82,7 +84,7 @@
     <h2 id="legal-bases">9. Legal bases for processing</h2>
     <ul>
         <li><strong>Performance of a contract</strong> (Art. 6(1)(b) GDPR): providing the App and the Premium features you bought, verifying your subscription, and running cloud sync when you have connected it.</li>
-        <li><strong>Legitimate interests</strong> (Art. 6(1)(f) GDPR): investigating a bug you reported to us, and keeping the App secure and functioning correctly. Our interest is in supporting and maintaining the App, weighed against the very limited data involved and the fact that you decide whether to send it.</li>
+        <li><strong>Legitimate interests</strong> (Art. 6(1)(f) GDPR): investigating a bug you reported to us, measuring how the subscription offer performs (clause 5), and keeping the App secure and functioning correctly. Our interest is in supporting and maintaining the App and its subscription offer, weighed against the very limited data involved and, for bug reports, the fact that you decide whether to send one.</li>
         <li><strong>Legal obligations</strong> (Art. 6(1)(c) GDPR): retaining records where accounting or tax law requires it.</li>
     </ul>
     <p>Where processing rests on your consent, you may withdraw it at any time — this does not affect the lawfulness of processing carried out before withdrawal.</p>
@@ -92,7 +94,8 @@
         <li>Data on your device: until you delete it in the App, or until you uninstall the App.</li>
         <li>The diagnostic log: until it is rotated out by newer entries, or until you clear it.</li>
         <li>Files in your cloud storage: until you delete them in your storage provider's account (see clause 4 for Google Drive, where the App's folder is hidden from the Drive interface).</li>
-        <li>Data held by Adapty: for the duration of your subscription relationship and the retention period set out in Adapty's own policy.</li>
+        <li>Data held by Adapty: for as long as we use Adapty for the App — Adapty does not keep it after our agreement with it ends — or until we have it deleted at your request (clause 12).</li>
+        <li>Sales reports from Google: for as long as accounting and tax law requires us to keep records.</li>
         <li>Bug report correspondence: as described in clause 6.</li>
     </ul>
 
@@ -101,8 +104,9 @@
 
     <h2 id="your-rights">12. Your rights</h2>
     <p>Under the GDPR you have the right to request <strong>access</strong> to your personal data, its <strong>rectification</strong> or <strong>erasure</strong>, the <strong>restriction</strong> of processing, <strong>portability</strong> of data you provided, and to <strong>object</strong> to processing based on legitimate interests.</p>
-    <p>Note that these rights apply to data we actually hold. <strong>Data that stays on your device is under your own control</strong>, so you exercise those rights directly in the App: view, edit, export (JSON, CSV), and delete your entries, and uninstall the App to remove everything.</p>
+    <p>Note that these rights apply to data we actually hold. <strong>Data that stays on your device is under your own control</strong>, so you exercise those rights directly in the App: view, edit, export (a JSON backup, and CSV with Premium), and delete your entries, and uninstall the App to remove everything.</p>
     <p>To exercise your rights against us, write to <strong><a href="mailto:apps.simonova@gmail.com">apps.simonova@gmail.com</a></strong>. We reply within one month.</p>
+    <p>We do not know who you are, so please include in a request about data held by Adapty or Google something that identifies your purchase: the Google Play order number (it starts with "GPA.") or the e-mail address of the Google account you paid with. If you have never bought a subscription, we have no information that would let us find the subscription profile that belongs to you.</p>
     <p>If you believe your data is processed unlawfully, you have the right to lodge a complaint with the data protection supervisory authority of your country of residence or place of work.</p>
 
     <h2 id="children">13. Children</h2>
