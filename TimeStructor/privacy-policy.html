@@ -11,7 +11,7 @@
 <main>
 
     <h1>TimeStructor — Privacy Policy</h1>
-    <p class="updated"><strong>Last updated: 16 September 2026</strong></p>
+    <p class="updated"><strong>Last updated: 25 September 2026</strong></p>
 
     <h2 id="short-version">1. The short version</h2>
     <p>TimeStructor is built to keep your data on your device.</p>
@@ -29,13 +29,14 @@
     <p>E-mail: <strong><a href="mailto:apps.simonova@gmail.com">apps.simonova@gmail.com</a></strong></p>
 
     <h2 id="on-device">3. Data stored on your device</h2>
-    <p>The App stores on your device: your Activities and Groups, their names, colours, icons, targets and limits, your tracked intervals, export templates, notification settings, and app preferences such as language and time format. It also keeps a locally generated device identifier, used to tell your devices apart when cloud sync is enabled.</p>
+    <p>The App stores on your device: your Activities and Groups, their names, colours, icons, targets and limits, your tracked intervals, export templates, notification settings, and app preferences such as language and time format. It also keeps a locally generated device identifier, used to tell your devices apart when cloud sync is enabled, and the last known status of your subscription — whether Premium is active, and when it renews or expires — so that paid features work as soon as the App starts, before the subscription provider (clause 5) has answered.</p>
     <p>This data is not transmitted to us. It lives in the App's private storage on your device.</p>
     <p><strong>System backups.</strong> The App allows Android's own backup mechanism to include this data: Android Auto Backup copies it to your Google account, if you have backup switched on. That copy is made by the operating system, goes to <strong>your</strong> account, and is governed by Google's privacy policy — we neither perform it nor have access to it. You can turn it off in your device's system settings.</p>
     <p>Deleting the App deletes the data on the device. We cannot restore it.</p>
 
     <h2 id="cloud-sync">4. Cloud sync (optional)</h2>
     <p>Cloud sync is disabled until you connect a storage provider yourself. The providers currently supported are <strong>Dropbox</strong> and <strong>Google Drive</strong>. Only one of them is active at a time: connecting one moves sync to it.</p>
+    <p>Switching to the other provider <strong>signs this device out of the previous one</strong> and removes the stored tokens or the access marker for it from your device; to use it again, you sign in again. The files this device already uploaded stay in the previous provider's folder. To delete them, switch back and disconnect, or remove this device from the device list on a device that still uses that provider (see below).</p>
     <p>When you connect a provider:</p>
     <ul>
         <li>You sign in <strong>with the provider itself</strong>: Dropbox opens its own login page in a system browser tab, and Google Drive uses the account chooser provided by Google Play services. We never see or receive your password.</li>
@@ -47,7 +48,7 @@
     <p>Each provider handles the data in your account on its own responsibility rather than ours, under its own privacy policy (Dropbox: <a href="https://www.dropbox.com/privacy">https://www.dropbox.com/privacy</a>, Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>). You can disconnect at any time on the Cloud sync screen, which removes the stored tokens or the access marker from your device. You can also revoke the App's access in your Dropbox account settings, or, for Google, in your Google Account under the apps connected to it (<a href="https://myaccount.google.com/connections">https://myaccount.google.com/connections</a>).</p>
     <p>Disconnecting on the Cloud sync screen also <strong>removes this device's own files from the cloud folder</strong> — the snapshot of its data and its small presence file. The removal is best-effort: if it fails (no connection, access already revoked), the device is still disconnected and the App tells you the files were left behind. Files uploaded by your <em>other</em> devices stay where they are.</p>
 
-    <p>The Cloud sync screen also lists the devices whose files are in that folder, with the date each one last synced, and lets you remove another device's files from there — use it for a device you no longer have, or one that was disconnected before the App removed its own files. A device that is still in use will upload its data again the next time it syncs.</p>
+    <p>The Cloud sync screen also lists the devices whose files are in that folder, with the date each one last synced, and lets you remove another device's files from there — use it for a device you no longer have, one that switched to the other provider, or one that was disconnected before the App removed its own files. A device that is still in use will upload its data again the next time it syncs.</p>
 
     <p>For Google Drive, note that the application data folder is <strong>hidden from the Drive interface</strong> by Google's design — you will not find those files in My Drive or in search; Google lets you erase an app's hidden data from Google Drive settings on the web, in the section listing the apps connected to your Drive.</p>
 
