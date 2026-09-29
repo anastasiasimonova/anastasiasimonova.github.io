@@ -11,7 +11,7 @@
 <main>
 
     <h1>TimeStructor — Privacy Policy</h1>
-    <p class="updated"><strong>Last updated: 25 September 2026</strong></p>
+    <p class="updated"><strong>Last updated: 29 September 2026</strong></p>
 
     <h2 id="short-version">1. The short version</h2>
     <p>TimeStructor is built to keep your data on your device.</p>
@@ -36,16 +36,16 @@
 
     <h2 id="cloud-sync">4. Cloud sync (optional)</h2>
     <p>Cloud sync is disabled until you connect a storage provider yourself. The providers currently supported are <strong>Dropbox</strong> and <strong>Google Drive</strong>. Only one of them is active at a time: connecting one moves sync to it.</p>
-    <p>Switching to the other provider <strong>signs this device out of the previous one</strong> and removes the stored tokens or the access marker for it from your device; to use it again, you sign in again. The files this device already uploaded stay in the previous provider's folder. To delete them, switch back and disconnect, or remove this device from the device list on a device that still uses that provider (see below).</p>
+    <p>Switching to the other provider <strong>signs this device out of the previous one</strong> and removes the stored refresh token or the access marker for it from your device; to use it again, you sign in again. The files this device already uploaded stay in the previous provider's folder. To delete them, switch back and disconnect, or remove this device from the device list on a device that still uses that provider (see below).</p>
     <p>When you connect a provider:</p>
     <ul>
         <li>You sign in <strong>with the provider itself</strong>: Dropbox opens its own login page in a system browser tab, and Google Drive uses the account chooser provided by Google Play services. We never see or receive your password.</li>
-        <li>The App stores what it needs to stay connected <strong>on your device</strong>, in the operating system's secure storage (Android Keystore-backed storage). For Dropbox these are the access and refresh tokens. For Google Drive there is no refresh token: Google Play services issues short-lived access tokens, and the App keeps only a marker that you granted access.</li>
+        <li>The App stores what it needs to stay connected <strong>on your device</strong>, in the operating system's secure storage (Android Keystore-backed storage). For Dropbox this is the refresh token; the short-lived access token is kept only in memory while the App is running. For Google Drive there is no refresh token: Google Play services issues short-lived access tokens, and the App keeps only a marker that you granted access.</li>
         <li>Your tracking data is written as files into <strong>your own account</strong> with that provider — the app-specific folder Dropbox creates for TimeStructor, or the hidden application data folder that Google Drive keeps for the App. It is not sent to us, and we have no access to it.</li>
         <li>On Google Drive the App requests <strong>one permission only</strong> (<code>drive.appdata</code>). It grants access to that hidden application folder and to nothing else in your Drive: the App cannot see, read, or change your other files.</li>
         <li>The App reads the <strong>e-mail address of the connected account</strong> in order to display it on the Cloud sync screen, so you can see which account is in use. It is fetched live, shown partly masked, and is <strong>neither stored nor written to logs</strong>.</li>
     </ul>
-    <p>Each provider handles the data in your account on its own responsibility rather than ours, under its own privacy policy (Dropbox: <a href="https://www.dropbox.com/privacy">https://www.dropbox.com/privacy</a>, Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>). You can disconnect at any time on the Cloud sync screen, which removes the stored tokens or the access marker from your device. You can also revoke the App's access in your Dropbox account settings, or, for Google, in your Google Account under the apps connected to it (<a href="https://myaccount.google.com/connections">https://myaccount.google.com/connections</a>).</p>
+    <p>Each provider handles the data in your account on its own responsibility rather than ours, under its own privacy policy (Dropbox: <a href="https://www.dropbox.com/privacy">https://www.dropbox.com/privacy</a>, Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>). You can disconnect at any time on the Cloud sync screen, which removes the stored refresh token or the access marker from your device. You can also revoke the App's access in your Dropbox account settings, or, for Google, in your Google Account under the apps connected to it (<a href="https://myaccount.google.com/connections">https://myaccount.google.com/connections</a>).</p>
     <p>Disconnecting on the Cloud sync screen also <strong>removes this device's own files from the cloud folder</strong> — the snapshot of its data and its small presence file. The removal is best-effort: if it fails (no connection, access already revoked), the device is still disconnected and the App tells you the files were left behind. Files uploaded by your <em>other</em> devices stay where they are.</p>
 
     <p>The Cloud sync screen also lists the devices whose files are in that folder, with the date each one last synced, and lets you remove another device's files from there — use it for a device you no longer have, one that switched to the other provider, or one that was disconnected before the App removed its own files. A device that is still in use will upload its data again the next time it syncs.</p>
