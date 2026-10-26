@@ -1,4 +1,4 @@
-/* Общие стили страниц Terms of Use и Privacy Policy. */
+/* Общие стили страниц сайта TimeStructor: главная (index.html), Terms of Use и Privacy Policy. */
 
 :root {
   color-scheme: light dark;
@@ -69,6 +69,38 @@ a {
   color: var(--accent);
   text-underline-offset: 0.15em;
   overflow-wrap: anywhere;
+}
+
+/* Главная (index.html; живёт только в репо сайта): шапка с иконкой и строка ссылок внизу. */
+
+.app {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.app img {
+  flex: none;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 22%;
+}
+
+.app h1 { margin: 0; }
+
+.tagline {
+  color: var(--muted);
+  margin: 0.25rem 0 0;
+}
+
+.links {
+  color: var(--muted);
+  margin: 3rem 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
 }
 
 @media print {
